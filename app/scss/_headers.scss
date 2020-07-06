@@ -1,0 +1,75 @@
+
+.headers {
+  font-family: $default-font;
+  color: inherit;
+  margin: 0 0 20px 0;
+  padding: 0;
+  position: relative;
+
+  &-h1 {
+    @extend .headers;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 46px;
+    line-height: 50px;
+  }
+  &-h2 {
+    @extend .headers;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 40px;
+    line-height: 50px;
+  }
+  &-h3 {
+    @extend .headers;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 35px;
+  }
+  &-h4 {
+    @extend .headers;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 25px;
+    letter-spacing: .5px;
+    text-transform: none;
+  }
+}
+
+.dr-text {
+  position: relative;
+  font-family: $default-font;
+  > * {
+    display: inline-block;
+  }
+
+  &__big {
+    @extend .dr-text;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 25px;
+  }
+  &__normal {
+    @extend .dr-text;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 25px;
+  }
+  &__small {
+    @extend .dr-text;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+  }
+  &__underline {
+    text-decoration: underline!important;
+  }
+  &__semibold {
+    font-weight: 500!important;
+  }
+}

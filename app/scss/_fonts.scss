@@ -1,0 +1,4 @@
+@import "_mixins/font-face";
+
+@include font-face("proximanova", "../fonts/ProximaNova/ProximaNova-Regular");
+@include font-face("proximanova", "../fonts/ProximaNova/ProximaNova-Semibold", 500);

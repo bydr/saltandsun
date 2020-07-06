@@ -1,0 +1,33 @@
+@import "vars";
+
+.c {
+
+  &-dark {
+    color: $dark;
+  }
+  &-gray {
+    color: $gray;
+
+    &-darken {
+      color: $gray-darken;
+    }
+  }
+  &-white {
+    color: $light;
+  }
+}
+
+.bg {
+
+  &-gray-lighten {
+    background-color: $gray-lighten;
+  }
+  &-overlay {
+    color: $light;
+
+    * {
+      color: $light;
+    }
+  }
+}
+

@@ -1,0 +1,71 @@
+@import "vars";
+
+.dr-btn {
+    appearance: none;
+    font-family: $default-font;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.5px;
+    display: inline-flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    text-transform: uppercase;
+    padding: 11px 25px;
+    margin: 0;
+    border-radius: 0;
+    color: $dark;
+    background: transparent;
+    outline: none!important;
+    cursor: pointer;
+    max-width: 190px;
+    height: 50px;
+    border: 1px solid transparent;
+    &:focus {
+        outline: none!important;
+    }
+
+    &__white {
+        background: $light !important;
+        color: $dark!important;
+
+        &:hover {
+            background: $light;
+        }
+    }
+
+    &__dark {
+        background: $dark !important;
+        color: $light!important;
+
+        &:hover {
+            background: $dark;
+        }
+    }
+
+     &__outline {
+         background-color: transparent;
+
+         &-black {
+             @extend .dr-btn__outline;
+             color: $dark!important;
+             border-color: $dark;
+         }
+         &-white {
+             @extend .dr-btn__outline;
+             color: $light!important;
+             border-color: $light;
+         }
+     }
+}
+
+.btn-box {
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}

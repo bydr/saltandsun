@@ -1,0 +1,149 @@
+@import "vars";
+
+
+/*==========  Desktop First  ==========*/
+
+// ≥1200px
+@include media-breakpoint-down(lg) {
+
+}
+
+// ≥992px
+@include media-breakpoint-down(md) {
+
+  .dr-navbar-nav__desktop {
+    display: none!important;
+  }
+
+  .header .navbar-brand {
+    flex: 1;
+  }
+  .section-banner__content {
+    background-image: none!important;
+    background-color: #A9A393;
+    min-height: initial;
+  }
+}
+
+// ≥768px
+@include media-breakpoint-down(sm) {
+  .slideshow__content-item {
+    padding: 20px 0;
+  }
+
+  .dr-sliders.owl-carousel .owl-nav button.owl-prev {
+    left: 0;
+  }
+
+  .dr-sliders.owl-carousel .owl-nav button.owl-next {
+    right: 0;
+  }
+
+  .dr-sliders.owl-carousel .owl-nav button {
+    width: 30px;
+    height: 30px;
+  }
+
+  .dr-sliders.owl-carousel .owl-nav button svg {
+    width: 20px;
+    height: 20px;
+  }
+
+  .slideshow__previews.dr-sliders.owl-carousel .owl-nav button.owl-prev {
+    right: 30px;
+  }
+
+  .slideshow__product.text-center {
+    margin: 20px 30px 0 30px;
+  }
+
+  .products-slider {
+    padding: 0 2em;
+  }
+  .section-slideshow .row > *:last-child {
+    padding: 0;
+  }
+
+
+  .sliders .owl-item:first-child .slider-item, .sliders .owl-item:nth-child(2) .slider-item {
+    background-position-x: right;
+  }
+}
+
+// ≥576px
+@include media-breakpoint-down(xs) {
+
+
+
+}
+
+
+/*==========  Mobile First  ==========*/
+
+// ≤576px
+@include media-breakpoint-up(sm) {
+
+}
+
+// ≤768px
+@include media-breakpoint-up(md) {
+
+  .section-block {
+
+    &__item {
+
+      &.reverse {
+
+        > .row {
+          flex-direction: row-reverse;
+        }
+      }
+    }
+  }
+
+
+}
+
+// ≤992px
+@include media-breakpoint-up(lg) {
+
+  .section-banner__img {
+    display: none;
+  }
+
+  .dr-sliders.owl-carousel {
+
+    &.dr-sliders__gray {
+      .owl-nav {
+
+        button {
+          background: $gray-lighten;
+        }
+      }
+    }
+
+    .owl-nav {
+
+      button {
+        &.owl-prev {
+          left: 15px;
+        }
+        &.owl-next {
+          right: 15px;
+        }
+      }
+
+    }
+  }
+
+
+  .mobile-menu, .mobile-menu__show, .mobile-menu__hide {
+    display: none!important;
+  }
+}
+
+// ≤1200px
+@include media-breakpoint-up(xl) {
+
+
+}
